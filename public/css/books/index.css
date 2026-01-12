@@ -1,0 +1,117 @@
+/* Background umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #0063f8);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+/* Tombol Tambah */
+a[href*="create"] {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a[href*="create"]:hover {
+    opacity: 0.8;
+}
+
+/* Pesan sukses */
+p {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Header tabel pelangi */
+table th {
+    padding: 12px;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    background: linear-gradient(45deg, #845EC2, #D65DB1, #FF9671, #FFC75F);
+}
+
+/* Isi tabel dengan warna selang-seling */
+table tr:nth-child(even) {
+    background: #fff3cd;
+}
+
+table tr:nth-child(odd) {
+    background: #ffe0b2;
+}
+
+table td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover animasi baris */
+table tr:hover {
+    background: #f8c291;
+    transition: 0.3s;
+}
+
+/* Tombol Edit */
+a[href*="edit"] {
+    background: #1e90ff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a[href*="edit"]:hover {
+    background: #187bcd;
+}
+
+/* Tombol Delete */
+form button {
+    background: #ff4757;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #e84118;
+}
+
+/* Membuat edit + delete sejajar */
+td form {
+    display: inline-block;
+    margin-left: 10px;
+}
